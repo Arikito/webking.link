@@ -1,0 +1,220 @@
+
+@import "vars";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow-y: scroll;
+	font-size: 15px;
+	.animate {
+		-webkit-transition: all .3s cubic-bezier(.4,0,.2,1);
+		-o-transition: all .3s cubic-bezier(.4,0,.2,1);
+		transition: all .3s cubic-bezier(.4,0,.2,1);
+	}
+	a {
+		color: $blue;
+		text-decoration: none;
+	}
+	#page_wrap {
+		header {
+			width: 100%;
+			max-width: 1170px;
+			margin: 0 auto;
+			img {
+				width: 80px;
+				margin: 30px auto;
+				display: block;
+			}
+			nav {
+				background: $blue;
+				position: relative;
+				padding: 0 20px;
+				line-height: 40px;
+				display: flex;
+				justify-content: space-around;
+				a {
+					color: $white;
+					padding: 0 1em;
+					&:hover {
+						background: $blue - 10;
+					}
+				}
+				&:before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					border: 20px solid transparent;
+					border-right: 0;
+					border-left: 15px solid $white;
+				}
+				&:after {
+					position: absolute;
+					top: 0;
+					right: 0;
+					border: 20px solid transparent;
+					border-left: 0;
+					border-right: 15px solid $white;
+				}
+			}
+		}
+		> section {
+			width: 100%;
+			padding: 2em 15px;
+			position: relative;
+			z-index: 100;
+			box-shadow: 0 -15px 15px rgba(0, 0, 0, .3);
+			&:before {
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				right: 0;
+				width: 100%;
+				height: 20px;
+				background: -webkit-linear-gradient(45deg, transparent 33.333%, $white 33.333%, $white 66.667%, transparent 66.667%),
+							-webkit-linear-gradient(135deg, transparent 33.333%, $white 33.333%, $white 66.667%, transparent 66.667%);
+				background: linear-gradient(45deg, transparent 33.333%, $white 33.333%, $white 66.667%, transparent 66.667%),
+							linear-gradient(-45deg, transparent 33.333%, $white 33.333%, $white 66.667%, transparent 66.667%);
+				-webkit-background-size: 20px 40px;
+				background-size: 20px 40px;
+			}
+			&:first-of-type {
+				&:before {
+					display: none;
+				}
+				box-shadow: none;
+			}
+			&:last-of-type {
+				box-shadow: none;
+			}
+			.heading {
+				position: relative;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				margin: 23px 0;
+				z-index: 1000;
+				&:after {
+					position: absolute;
+					background: url(../img/crown.svg);
+					margin: 0 auto;
+					width: 30px;
+					height: 23px;
+					left: calc(50% - 15px);
+					bottom: 100%;
+				}
+				> h2 {
+					display: inline-block;
+					text-transform: uppercase;
+					font-size: 2.400em;
+					position: relative;
+					&:before {
+						position: absolute;
+						right: calc(100% + .4em);
+						top: calc(50% - 3px);
+						background: transparent;
+						width: 2em;
+						height: 1px;
+						border: 4px solid transparent;
+						border-top: 0;
+						border-right: 0;
+						border-left-width: .5em;
+						box-shadow: 0 1px 0 $gray_1,
+							inset 0 -1px 0 $gray_1;
+					}
+					&:after {
+						position: absolute;
+						left: calc(100% + .4em);
+						top: calc(50% - 3px);
+						background: transparent;
+						width: 2em;
+						height: 1px;
+						border: 4px solid transparent;
+						border-top: 0;
+						border-left: 0;
+						border-right-width: .5em;
+						box-shadow: 0 1px 0 $gray_1,
+							inset 0 -1px 0 $gray_1;
+					}
+				}
+			}
+			&#contacts {
+				background: $white;
+				.map {
+					pointer-events: none;
+					position: absolute;
+					top: 132px;
+					right: 0;
+					left: 0;
+					height: 500px;
+				}
+			}
+			&.pre-dark {
+				box-shadow: 0 15px 15px rgba(0, 0, 0, .3);
+				&:after {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					right: 0;
+					width: 100%;
+					height: 20px;
+					background: -webkit-linear-gradient(45deg, $white 33.333%, transparent 33.333%, transparent 66.667%, $white 66.667%),
+								-webkit-linear-gradient(135deg, $white 33.333%, transparent 33.333%, transparent 66.667%, $white 66.667%);
+					background: linear-gradient(45deg, $white 33.333%, transparent 33.333%, transparent 66.667%, $white 66.667%),
+								linear-gradient(-45deg, $white 33.333%, transparent 33.333%, transparent 66.667%, $white 66.667%);
+					-webkit-background-size: 20px 40px;
+					background-size: 20px 40px;
+					z-index: 1000;
+				}
+			}
+			&.dark {
+				z-index: 10;
+				background: url(../img/bg.jpg);
+				background-size: cover;
+				box-shadow: none;
+				&:before {
+					display: none;
+					background: none;
+					background: -webkit-linear-gradient(45deg, transparent 33.333%, $gray_2 33.333%, $gray_2 66.667%, transparent 66.667%),
+								-webkit-linear-gradient(135deg, transparent 33.333%, $gray_2 33.333%, $gray_2 66.667%, transparent 66.667%);
+					background: linear-gradient(45deg, transparent 33.333%, $gray_2 33.333%, $gray_2 66.667%, transparent 66.667%),
+								linear-gradient(-45deg, transparent 33.333%, $gray_2 33.333%, $gray_2 66.667%, transparent 66.667%);
+					-webkit-background-size: 20px 40px;
+					background-size: 20px 40px;
+				}
+				.heading {
+					> h2 {
+						color: $white;
+						&:before {
+							box-shadow: 0 1px 0 $white,
+								inset 0 -1px 0 $white;
+						}
+						&:after {
+							box-shadow: 0 1px 0 $white,
+								inset 0 -1px 0 $white;
+						}
+					}
+				}
+			}
+		}
+		footer {
+			background: $blue;
+			line-height: 5em;
+			color: $white;
+			.socials {
+				float: right;
+				padding: 1em 0;
+				li {
+					width: 3em;
+					height: 3em;
+					border: 2px solid $white;
+					border-radius: 100%;
+					float: left;
+					margin-right: 1em;
+				}
+			}
+		}
+	}
+}

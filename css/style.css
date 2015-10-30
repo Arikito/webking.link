@@ -1,0 +1,237 @@
+/* line 4, ../sass/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/style.scss */
+body {
+  overflow-y: scroll;
+  font-size: 15px;
+}
+/* line 12, ../sass/style.scss */
+body .animate {
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* line 17, ../sass/style.scss */
+body a {
+  color: #4eb8e6;
+  text-decoration: none;
+}
+/* line 22, ../sass/style.scss */
+body #page_wrap header {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* line 26, ../sass/style.scss */
+body #page_wrap header img {
+  width: 80px;
+  margin: 30px auto;
+  display: block;
+}
+/* line 31, ../sass/style.scss */
+body #page_wrap header nav {
+  background: #4eb8e6;
+  position: relative;
+  padding: 0 20px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+/* line 38, ../sass/style.scss */
+body #page_wrap header nav a {
+  color: #ffffff;
+  padding: 0 1em;
+}
+/* line 41, ../sass/style.scss */
+body #page_wrap header nav a:hover {
+  background: #44aedc;
+}
+/* line 45, ../sass/style.scss */
+body #page_wrap header nav:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 20px solid transparent;
+  border-right: 0;
+  border-left: 15px solid #ffffff;
+}
+/* line 53, ../sass/style.scss */
+body #page_wrap header nav:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-left: 0;
+  border-right: 15px solid #ffffff;
+}
+/* line 63, ../sass/style.scss */
+body #page_wrap > section {
+  width: 100%;
+  padding: 2em 15px;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 -15px 15px rgba(0, 0, 0, 0.3);
+}
+/* line 69, ../sass/style.scss */
+body #page_wrap > section:before {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  background: -webkit-linear-gradient(45deg, transparent 33.333%, #ffffff 33.333%, #ffffff 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #ffffff 33.333%, #ffffff 66.667%, transparent 66.667%);
+  background: linear-gradient(45deg, transparent 33.333%, #ffffff 33.333%, #ffffff 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #ffffff 33.333%, #ffffff 66.667%, transparent 66.667%);
+  -webkit-background-size: 20px 40px;
+  background-size: 20px 40px;
+}
+/* line 83, ../sass/style.scss */
+body #page_wrap > section:first-of-type {
+  box-shadow: none;
+}
+/* line 84, ../sass/style.scss */
+body #page_wrap > section:first-of-type:before {
+  display: none;
+}
+/* line 89, ../sass/style.scss */
+body #page_wrap > section:last-of-type {
+  box-shadow: none;
+}
+/* line 92, ../sass/style.scss */
+body #page_wrap > section .heading {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin: 23px 0;
+  z-index: 1000;
+}
+/* line 99, ../sass/style.scss */
+body #page_wrap > section .heading:after {
+  position: absolute;
+  background: url(../img/crown.svg);
+  margin: 0 auto;
+  width: 30px;
+  height: 23px;
+  left: calc(50% - 15px);
+  bottom: 100%;
+}
+/* line 108, ../sass/style.scss */
+body #page_wrap > section .heading > h2 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 2.400em;
+  position: relative;
+}
+/* line 113, ../sass/style.scss */
+body #page_wrap > section .heading > h2:before {
+  position: absolute;
+  right: calc(100% + .4em);
+  top: calc(50% - 3px);
+  background: transparent;
+  width: 2em;
+  height: 1px;
+  border: 4px solid transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left-width: .5em;
+  box-shadow: 0 1px 0 #444444, inset 0 -1px 0 #444444;
+}
+/* line 127, ../sass/style.scss */
+body #page_wrap > section .heading > h2:after {
+  position: absolute;
+  left: calc(100% + .4em);
+  top: calc(50% - 3px);
+  background: transparent;
+  width: 2em;
+  height: 1px;
+  border: 4px solid transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right-width: .5em;
+  box-shadow: 0 1px 0 #444444, inset 0 -1px 0 #444444;
+}
+/* line 143, ../sass/style.scss */
+body #page_wrap > section#contacts {
+  background: #ffffff;
+}
+/* line 145, ../sass/style.scss */
+body #page_wrap > section#contacts .map {
+  pointer-events: none;
+  position: absolute;
+  top: 132px;
+  right: 0;
+  left: 0;
+  height: 500px;
+}
+/* line 154, ../sass/style.scss */
+body #page_wrap > section.pre-dark {
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+/* line 156, ../sass/style.scss */
+body #page_wrap > section.pre-dark:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  background: -webkit-linear-gradient(45deg, #ffffff 33.333%, transparent 33.333%, transparent 66.667%, #ffffff 66.667%), -webkit-linear-gradient(135deg, #ffffff 33.333%, transparent 33.333%, transparent 66.667%, #ffffff 66.667%);
+  background: linear-gradient(45deg, #ffffff 33.333%, transparent 33.333%, transparent 66.667%, #ffffff 66.667%), linear-gradient(-45deg, #ffffff 33.333%, transparent 33.333%, transparent 66.667%, #ffffff 66.667%);
+  -webkit-background-size: 20px 40px;
+  background-size: 20px 40px;
+  z-index: 1000;
+}
+/* line 172, ../sass/style.scss */
+body #page_wrap > section.dark {
+  z-index: 10;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  box-shadow: none;
+}
+/* line 177, ../sass/style.scss */
+body #page_wrap > section.dark:before {
+  display: none;
+  background: none;
+  background: -webkit-linear-gradient(45deg, transparent 33.333%, #aaaaaa 33.333%, #aaaaaa 66.667%, transparent 66.667%), -webkit-linear-gradient(135deg, transparent 33.333%, #aaaaaa 33.333%, #aaaaaa 66.667%, transparent 66.667%);
+  background: linear-gradient(45deg, transparent 33.333%, #aaaaaa 33.333%, #aaaaaa 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #aaaaaa 33.333%, #aaaaaa 66.667%, transparent 66.667%);
+  -webkit-background-size: 20px 40px;
+  background-size: 20px 40px;
+}
+/* line 188, ../sass/style.scss */
+body #page_wrap > section.dark .heading > h2 {
+  color: #ffffff;
+}
+/* line 190, ../sass/style.scss */
+body #page_wrap > section.dark .heading > h2:before {
+  box-shadow: 0 1px 0 #ffffff, inset 0 -1px 0 #ffffff;
+}
+/* line 194, ../sass/style.scss */
+body #page_wrap > section.dark .heading > h2:after {
+  box-shadow: 0 1px 0 #ffffff, inset 0 -1px 0 #ffffff;
+}
+/* line 202, ../sass/style.scss */
+body #page_wrap footer {
+  background: #4eb8e6;
+  line-height: 5em;
+  color: #ffffff;
+}
+/* line 206, ../sass/style.scss */
+body #page_wrap footer .socials {
+  float: right;
+  padding: 1em 0;
+}
+/* line 209, ../sass/style.scss */
+body #page_wrap footer .socials li {
+  width: 3em;
+  height: 3em;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  float: left;
+  margin-right: 1em;
+}
