@@ -94,12 +94,12 @@ body {
 					@media (max-width: $mobile_wide) {
 						&:first-of-type {
 							a {
-								padding-left: 0;
+								padding: 0 .5em;
 							}
 						}
 						&:last-of-type {
 							a {
-								padding-right: 0;
+								padding: 0 .5em;
 							}
 						}
 					}

@@ -112,11 +112,11 @@ body #page_wrap header nav div.links:last-of-type:after {
 @media (max-width: 800px) {
   /* line 96, ../sass/style.scss */
   body #page_wrap header nav div.links:first-of-type a {
-    padding-left: 0;
+    padding: 0 .5em;
   }
   /* line 101, ../sass/style.scss */
   body #page_wrap header nav div.links:last-of-type a {
-    padding-right: 0;
+    padding: 0 .5em;
   }
 }
 /* line 107, ../sass/style.scss */
