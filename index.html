@@ -6,53 +6,85 @@
 	<title>WebKing</title>
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/main.js"></script>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Martel+Sans'>
+	<link rel='stylesheet' type='text/css' href='css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
 </head>
 <body>
 	<div id="page_wrap">
 		<header>
 			<div class="logo">
-				<img src="img/logo.svg" alt="">
+				<img src="img/logo.svg" class="animate" alt="">
 			</div>
 			<nav>
-				<a href="#portfolio" class="animate">Портфоліо</a>
-				<a href="#features" class="animate">Технології</a>
-				<a href="#aboutus" class="animate">Про нас</a>
-				<a href="#contacts" class="animate">Контакти</a>
+				<div class="links">
+					<a href="#portfolio" class="animate">Портфоліо</a>
+					<a href="#features" class="animate">Технології</a>
+				</div>
+				<div class="logo_text">
+					<span>W</span>eb<span>K</span>ing
+					<div>studio</div>
+				</div>
+				<div class="links">
+					<a href="#aboutus" class="animate">Про нас</a>
+					<a href="#contacts" class="animate">Контакти</a>
+				</div>
 			</nav>
 		</header>
+		<ul class="fixed_nav">
+			<li>
+				<a href="#page_wrap" class="animate">Home</a>
+			</li>
+			<li>
+				<a href="#portfolio" class="animate">Портфоліо</a>
+			</li>
+			<li>
+				<a href="#features" class="animate">Технології</a>
+			</li>
+			<li>
+				<a href="#aboutus" class="animate">Про нас</a>
+			</li>
+			<li>
+				<a href="#contacts" class="animate">Контакти</a>
+			</li>
+		</ul>
 		<section id="portfolio" class="light">
 			<div class="heading">
-				<h2>Портфоліо</h2>
+				<h2 class="animate">Портфоліо</h2>
+			</div>
+			<div class="content">
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
 			</div>
 		</section>
 		<section id="features" class="light pre-dark">
 			<div class="heading">
-				<h2>Технології</h2>
+				<h2 class="animate">Технології</h2>
 			</div>
 		</section>
 		<section id="aboutus" class="dark">
 			<div class="heading">
-				<h2>Про нас</h2>
+				<h2 class="animate">Про нас</h2>
 			</div>
 		</section>
 		<section id="contacts" class="light">
 			<div class="heading">
-				<h2>Контакти</h2>
+				<h2 class="animate">Контакти</h2>
 			</div>
 			<div class="map">
-				<iframe
+				<!-- <iframe
 					width="100%"
 					height="100%"
 					frameborder="0"
 					style="border:0"
 					src="https://www.google.com/maps/embed/v1/place?q=49.994983%2C%2036.335823&key=AIzaSyD34ZCpcoAfGcChWJ5b7KY4SnUy7FvIZLE" allowfullscreen>
-				</iframe>
+				</iframe> -->
 			</div>
 		</section>
 		<footer>
-			<span>&copy; WebKing, 2015</span>
+			<span>&copy; WebKingStudio, 2015</span>
 			<ul class="socials">
 				<li class="icon-font"></li>
 				<li class="icon-font"></li>
