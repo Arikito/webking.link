@@ -162,16 +162,15 @@ body {
 					width: calc(100% - 70px);
 					float: right;
 					div.links {
-						margin-top: 15px;
+						margin: 15px 0;
 						width: 50%;
 						&:first-of-type,
 						&:last-of-type {
 							justify-content: space-around;
 							padding-right: 0;
-						}
-						a {
-							font-size: 1em;
-							padding: 0;
+							a {
+								font-size: 1em;
+							}
 						}
 						&:last-of-type {
 							padding-left: 0;
